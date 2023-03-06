@@ -1,0 +1,29 @@
+.form-label {
+display: flex;
+flex-direction: column-reverse;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    position: relative;
+    z-index: 100;
+    background-color: rgb(245, 160, 238);
+}
+.header__wrapper, .footer__wrapper, .form__wrapper{
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+}
+.header__wrapper{
+    display: flex;
+    padding-top: 32px;
+}
+.header__text{
+    margin: 0 auto;
+}
+.footer{
+    padding-top: 570px;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header class="header">
+        <div class="header__wrapper">
+            <img src="img/logo_mospoly.png" alt="" class="header__logo">
+            <h1 class="header__text">Домашняя работа: Hello, World!</h1>
+        </div>
+    </header>
+    <main>
+        <div class="form__wrapper">
+            <form method="POST" action="https://httpbin.org/post">
+                <legend>Feedback form</legend>
+                <div class="mb-3">
+                    <label for="disabledTextInput" class="form-label">Name</label>
+                    <input type="text" class="form-control" name="name" placeholder="Enter your name">
+                </div>
+                <div class="mb-3">
+                    <label for="disabledTextInput" class="form-label">Email address</label>
+                    <input type="email" class="form-control" name="email" placeholder="Enter your Email">
+                </div>
+                <label class="form-label">
+                    <span>Вид обращения</span>
+                    <select name="select" class="label__select">
+                        <option value="gratitude">gratitude</option>
+                        <option value="complaint">complaint</option>
+                        <option value="offer">proposal</option>
+                    </select>
+                </label>
+                <label class="form-label">
+                    <span>comment</span>
+                    <textarea class="label__textarea" name="text" cols="30" rows="6"></textarea>
+                </label>
+                <div class="form__checkbox">
+                    <label class="checkbox__label"><input class="checkbox__input" type="checkbox" name="checked"><span>E-mail</span></input></label>
+                    <label class="checkbox__label"><input class="checkbox__input" type="checkbox" name="checked"><span>sms</span></input></label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <a href="back.php">get_headers</a>
+            </form>
+    </main>
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <p class="footer__text">Милосердова Алёна Владимировна 221-322</p>
+        </div>
+    </footer>
+</body>
+</html>
