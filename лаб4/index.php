@@ -44,8 +44,6 @@
                         if (strpos($arr_equation[0], '/') !== false) {
                             $operand = '/';
                         }
-
-                        // equatation split
                         if ($operand == '+') {
                             $equatation = explode('+', $arr_equation[0]);
                         }
@@ -58,8 +56,6 @@
                         if ($operand == '/') {
                             $equatation = explode('/', $arr_equation[0]);
                         }
-
-                        // counting
                         if ($operand == '+') {
                             if ($equatation[0] == 'x') {
                                 $x = (int)$result - (int)$equatation[1];
